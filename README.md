@@ -24,7 +24,7 @@ pip3 install nltk
 Second important, We have used word2vec for word representation, we used some pretrained word2vec published [AraVec](https://www.sciencedirect.com/science/article/pii/S1877050917321749) by Eng. Abo Bakr and others,
 we used lightweight ones which use just unigrams, and as well as our pretrained one. So to come over this:
 
-- First, check Server requirements notebook you can find here [Server requirements](https://github.com/al0olo/AIM_ML_Task/blob/main/Server%20requirements.ipynb)
+- First, check Server requirements notebook you can find here [Server requirements](https://github.com/al0olo/Arabic-Dialect-Identification/blob/main/Server%20requirements.ipynb)
 - mkdir new direction inside models direction downloaded
 	- in "models" direction should have "word2vec/downloaded_models"
 - Second, run the notebook to download these word2vec models.
@@ -48,7 +48,7 @@ The dataset after fetching it from API is larger than 50 Miga, and we can not pu
 
 Helpful script to keep of some functions that we use in different files.
 
-**To see this file, check the [configs.py script](https://github.com/al0olo/AIM_ML_Task/blob/main/configs.py) script, its fully documented.**
+**To see this file, check the [configs.py script](https://github.com/al0olo/Arabic-Dialect-Identification/blob/main/configs.py) script, its fully documented.**
 
 ### Data Fetching
 
@@ -63,7 +63,7 @@ We have the original dataset without the text column, which what we will use for
 - Then, handle requirements for saving new csv file with the new text column.
 
 
-**To see this stage of fetching data, check the [fetch_data.py script](https://github.com/al0olo/AIM_ML_Task/blob/main/fetch_data.py) script, its fully documented, and to get overview of the result from this stage check [Data Fetching.ipynb notebook](https://github.com/al0olo/AIM_ML_Task/blob/main/Data%20Fetching.ipynb).**
+**To see this stage of fetching data, check the [fetch_data.py script](https://github.com/al0olo/Arabic-Dialect-Identification/blob/main/fetch_data.py) script, its fully documented, and to get overview of the result from this stage check [Data Fetching.ipynb notebook](https://github.com/al0olo/Arabic-Dialect-Identification/blob/main/Data%20Fetching.ipynb).**
 
 **Quick intuition about what we got from this stage**
 
@@ -94,7 +94,7 @@ we dealing with Arabic text we start the cleaning process.
 - Save the data after preprocessing
 - Split the data into training and testing sets, and use the Stratified split to ensure we have approximate distribution with original data.
 
-**To see this stage of preprocessing data, check the [data_preprocess.py script](https://github.com/al0olo/AIM_ML_Task/blob/main/data_preprocess.py) and to know how we shuffle the data, check the [data_shuffling_split.py script](https://github.com/al0olo/AIM_ML_Task/blob/main/data_shuffling_split.py) its fully documented, and to get overview of the result from this stage check [Data pre-processing.ipynb notebook](https://github.com/al0olo/AIM_ML_Task/blob/main/Data%20pre-processing.ipynb).**
+**To see this stage of preprocessing data, check the [data_preprocess.py script](https://github.com/al0olo/Arabic-Dialect-Identification/blob/main/data_preprocess.py) and to know how we shuffle the data, check the [data_shuffling_split.py script](https://github.com/al0olo/Arabic-Dialect-Identification/blob/main/data_shuffling_split.py) its fully documented, and to get overview of the result from this stage check [Data pre-processing.ipynb notebook](https://github.com/al0olo/Arabic-Dialect-Identification/blob/main/Data%20pre-processing.ipynb).**
 
 **Quick intuition about preprocessing and shuffling**
 
@@ -121,13 +121,13 @@ Once we got these word representation and run the required functions to convert 
 - Initialize the required variables.
 - Train different Machine Learning & Deep Learning Models
 
-**To see this stage of Data preparation &  Modeling, check the [ml_modeling.py script](https://github.com/al0olo/AIM_ML_Task/blob/main/ml_modeling.py), and [keras_models.py](https://github.com/al0olo/AIM_ML_Task/blob/main/keras_models.py) its fully documented, and to get overview of the result from this stage after run the notebooks check [ML Models Train.ipynb notebook](https://github.com/al0olo/AIM_ML_Task/blob/main/ML%20Models%20Train.ipynb), and  and [DL Models Train.ipynb notebook](https://github.com/al0olo/AIM_ML_Task/blob/main/DL%20Models%20Train.ipynb)**
+**To see this stage of Data preparation &  Modeling, check the [ml_modeling.py script](https://github.com/al0olo/Arabic-Dialect-Identification/blob/main/ml_modeling.py), and [keras_models.py](https://github.com/al0olo/Arabic-Dialect-Identification/blob/main/keras_models.py) its fully documented, and to get overview of the result from this stage after run the notebooks check [ML Models Train.ipynb notebook](https://github.com/al0olo/Arabic-Dialect-Identification/blob/main/ML%20Models%20Train.ipynb), and  and [DL Models Train.ipynb notebook](https://github.com/al0olo/Arabic-Dialect-Identification/blob/main/DL%20Models%20Train.ipynb)**
 
 
 
 ### Result of Testing and what we use in our API
 
-**To see result of modeling, check the [Compare ML Models.ipynb Notebook](https://github.com/al0olo/AIM_ML_Task/blob/main/Compare%20ML%20Models.ipynb), or [Compare DL Models.ipynb Notebook](https://github.com/al0olo/AIM_ML_Task/blob/main/Compare%20DL%20Models.ipynb).**
+**To see result of modeling, check the [Compare ML Models.ipynb Notebook](https://github.com/al0olo/Arabic-Dialect-Identification/blob/main/Compare%20ML%20Models.ipynb), or [Compare DL Models.ipynb Notebook](https://github.com/al0olo/Arabic-Dialect-Identification/blob/main/Compare%20DL%20Models.ipynb).**
 
 
 ## Results with Machine Learning Models
